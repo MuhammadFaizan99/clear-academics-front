@@ -84,7 +84,7 @@
       width: 80%;
     }
     .hero::before{
-      height: 70%;
+      height: 80%;
     }
     .buttons {
       flex-direction: column;
