@@ -41,7 +41,7 @@ const Header = () => {
         </ul>
       </div>
       <div className={styles.middle}>
-        <img src="../../../public/assets/logo.png" alt="Logo" className={styles.logo} />
+        <img src="../../assets/logo.png" alt="Logo" className={styles.logo} />
       </div>
       <div className={styles.right}>
         {/* Use handleEnrollClick function as onClick handler */}
