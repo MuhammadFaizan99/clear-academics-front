@@ -87,7 +87,6 @@
       height: 80%;
     }
     .buttons {
-      flex-direction: column;
       align-items: center;
     }
     .heading {
