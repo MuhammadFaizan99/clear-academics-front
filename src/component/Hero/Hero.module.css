@@ -24,7 +24,7 @@
   }
   @media (max-width: 700px) {
     .hero::before {
-      height: 85%;
+      /* height: 85%; */
     
     }
   }
