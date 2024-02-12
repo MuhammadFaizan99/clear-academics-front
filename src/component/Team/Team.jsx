@@ -9,7 +9,7 @@ export default function Team() {
       <div className={styles.teamMembers}>
         
         <div className={styles.teamMember}>
-          <img src="../../../public/assets/Samantha Doe.jpg" alt="Samantha Doe" className={styles.memberImage} />
+          <img src="../../assets/Samantha Doe.jpg" alt="Samantha Doe" className={styles.memberImage} />
           <h3>Samantha Doe</h3>
           <p className={styles.memberTitle}>LEAD STRATEGIST</p>
           <p className={styles.memberDescription}>
@@ -24,7 +24,7 @@ export default function Team() {
         </div>
         
         <div className={styles.teamMember}>
-          <img src="../../../public/assets/Olivia Rodriguez.jpg" alt="Olivia Rodriguez" className={styles.memberImage} />
+          <img src="../../assets/Olivia Rodriguez.jpg" alt="Olivia Rodriguez" className={styles.memberImage} />
           <h3>Olivia Rodriguez</h3>
           <p className={styles.memberTitle}>FINANCIAL ANALYST</p>
           <p className={styles.memberDescription}>
@@ -39,7 +39,7 @@ export default function Team() {
         </div>
 
         <div className={styles.teamMember}>
-          <img src="../../../public/assets/Marcus Douglas.jpg" alt="Marcus Douglas" className={styles.memberImage} />
+          <img src="../../assets/Marcus Douglas.jpg" alt="Marcus Douglas" className={styles.memberImage} />
           <h3>Marcus Douglas</h3>
           <p className={styles.memberTitle}>SOFTWARE ENGINEER</p>
           <p className={styles.memberDescription}>
