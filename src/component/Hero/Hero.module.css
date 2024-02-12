@@ -1,0 +1,107 @@
+/* Hero.module.css */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin: 90px auto;
+    width: 50%;
+  }
+  .hero::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../public/assets/bg-image.jpeg');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  @media (max-width: 700px) {
+    .hero::before {
+      height: 85%;
+    
+    }
+  }
+  
+  .heading {
+    margin-bottom: 20px;
+    font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+    font-weight: 700;
+    font-size: 5.5em;
+    line-height: 1.26;
+    text-transform: none;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-transform: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:first-child {
+    background-color: #007bff; 
+    transition: background-color 1s ease;
+  }
+  
+  .button:last-child {
+    background-color: white; 
+    transition: background-color 1s ease, color 1s ease;
+    color: #333; 
+  }
+  
+  .button:last-child:hover {
+    background-color: #007bff; 
+    color: white;
+  }
+  .button:first-child:hover {
+    background-color: #06315f; 
+  }
+  
+  /* Media query for widths less than 700px */
+  @media (max-width: 700px) {
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .heading {
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+    .description {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+  
+    .button {
+      padding: 15px;
+      margin: 10px;
+    }
+  }
+  

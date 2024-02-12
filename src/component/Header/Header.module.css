@@ -1,0 +1,155 @@
+/* Header.module.css */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: white;
+    opacity: 0.85;
+    color: #333;
+    border-bottom: 3px solid #D33622;
+}
+
+.left {
+    display: flex;
+}
+
+.middle {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.middle img {
+    width: 300px;
+    height: 72px;
+    margin-right: 87px;
+}
+
+.right {
+    display: flex;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+}
+
+.navList li {
+    margin-right: 20px;
+}
+
+.navList li a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+}
+
+.navList li a:hover {
+    text-decoration: none;
+}
+
+.navList li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: transparent;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navList li a:hover::after {
+    visibility: visible;
+    background-color: #333;
+    transform: scaleX(1);
+}
+
+.enrollButton {
+    background-color: #007bff;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.hamburgerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: transform 0.4s;
+}
+
+.change:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 7px);
+}
+
+.change:nth-child(2) {
+    opacity: 0;
+}
+
+.change:nth-child(3) {
+    transform: rotate(-45deg) translate(-2px, -7px);
+}
+
+@media (max-width: 700px) {
+
+    .left,
+    .right {
+        display: none;
+    }
+
+    .middle img {
+        width: 230px;
+        height: 50px;
+        margin-left: 106px;
+    }
+
+    .hamburgerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mobileMenu {
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        color: #333;
+    }
+
+    .mobileLogo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .mobileNavList {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .mobileNavList li {
+        margin-bottom: 10px;
+    }
+}

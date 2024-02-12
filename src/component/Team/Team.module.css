@@ -1,0 +1,89 @@
+.teamContainer {
+  text-align: center;
+  margin: auto;
+}
+
+.teamContainer h2 {
+  color: #454759;
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.143;
+  text-transform: none;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.teamMember {
+  max-width: 20%;
+}
+
+.teamMember h3 {
+  color: #454759;
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.memberImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.memberTitle {
+  color: rgba(47, 124, 255, 1);
+  margin: 5px 0;
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.memberDescription {
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: none;
+  color: rgba(43, 45, 66, 1);
+  margin-bottom: 20px;
+}
+
+.socialMedia {
+  font-size: 20px;
+  color: #333;
+}
+
+.socialMedia>* {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.socialMedia>*:hover {
+  margin: 0 10px;
+  color: rgba(47, 124, 255, 1);
+}
+
+@media (max-width: 768px) {
+  .teamMembers {
+    flex-direction: column;
+  }
+
+  .teamContainer h2 {
+    font-size: 2em;
+  }
+
+  .teamMember {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+}

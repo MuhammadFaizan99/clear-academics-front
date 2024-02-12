@@ -1,0 +1,97 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 60px;
+}
+
+.mapContainer {
+    width: 50%;
+    min-height: 600px;
+}
+
+.mapIframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    min-height: 600px;
+    box-sizing: border-box;
+    background-color: rgba(43, 45, 66, 1);
+}
+
+.contactInfo h2 {
+    font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.143;
+    text-transform: none;
+    color: white;
+}
+
+.contactInfo p {
+    font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-transform: none;
+    color: white;
+}
+
+.mainContactDetails {
+    margin-top: 30px;
+}
+
+.contactDetails {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.description {
+    font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.5;
+    color: white;
+}
+
+.icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: rgba(47, 124, 255, 1);
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .contactInfo h2 {
+        font-size: 2em;
+    }
+
+    .contactInfo p {
+        font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5;
+        text-transform: none;
+        color: white;
+    }
+
+    .mapContainer {
+        width: 100%;
+        height: 100px;
+    }
+
+    .contactInfo {
+        width: 100%;
+    }
+}

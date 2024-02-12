@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  margin-top: 200px;
+  max-width: 1150px;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+
+.left {
+  flex: 1;
+  padding: 35px 20px;
+}
+
+.right {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.service {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-right: 13px;
+  margin-top: -20px;
+  font-size: 70px;
+  color: #007bff;
+}
+
+.heading {
+  color: #454759;
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.mainheading {
+  color: #454759;
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.143;
+  text-transform: none;
+}
+
+.paragraph {
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-size: 14px;
+  color: rgba(43,45,66,1);
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.mainparagraph {
+  font-family: Mulish, Helvetica, Arial, Sans-Serif, serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.service h3 {
+  margin-bottom: 5px;
+}
+
+.service p {
+  margin-bottom: 10px;
+}
+
+/* Media Query for screens less than 700px */
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  
+  .left, .right {
+    flex: auto;
+    padding: 20px;
+  }
+
+  .right {
+    order: -1;
+  }
+
+  .icon {
+    margin-top: 0;
+    font-size: 50px;
+  }
+
+  .mainheading {
+    font-size: 2em;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .paragraph {
+    font-size: 12px;
+    text-align: center;
+  }
+}
