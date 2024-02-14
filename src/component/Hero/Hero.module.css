@@ -84,7 +84,7 @@
       width: 80%;
     }
     .hero::before{
-      min-height: 50%;
+      max-height: 70%;
     }
     .buttons {
       align-items: center;
