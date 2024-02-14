@@ -37,6 +37,7 @@
 
 .navList li {
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .navList li a {
@@ -113,7 +114,7 @@
     }
 
     .middle img {
-        width: 230px;
+        width: 180px;
         height: 50px;
     }
 
