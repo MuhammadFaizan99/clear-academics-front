@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import styles from './Header.module.css';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 700);
   const [menuIcon, setMenuIcon] = useState(false);
-  
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -31,13 +30,21 @@ const Header = () => {
     navigate('/enrollment-form');
   };
 
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.left}>
         <ul className={styles.navList}>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Contact</a></li>
+          {/* Call scrollToAbout function onClick */}
+          <li><a href="#about" onClick={scrollToAbout}>About Us</a></li> 
+          <li><Link to="/">Team</Link></li>
+          <li><Link to="/">Contact</Link></li>
         </ul>
       </div>
       <div className={styles.middle}>
@@ -57,7 +64,7 @@ const Header = () => {
       {showMenu && isMobile && (
         <div className={styles.mobileMenu}>
           <ul className={styles.mobileNavList}>
-            <li>About Us</li>
+            <li onClick={scrollToAbout}>About Us</li>
             <li>Team</li>
             <li>Contact</li>
           </ul>
