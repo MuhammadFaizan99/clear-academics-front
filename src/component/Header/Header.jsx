@@ -30,24 +30,24 @@ const Header = () => {
     navigate('/enrollment-form');
   };
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-  
   const scrollToAbout = () => {
-    scrollToSection('about');
-  };
-  
-  const scrollToTeam = () => {
-    scrollToSection('team');
-  };
-  
-  const scrollToContact = () => {
-    scrollToSection('contact');
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };  
+  const scrollToTeam = () => {
+    const aboutSection = document.getElementById('team');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }; 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }; 
 
   return (
     <header className={styles.header}>
