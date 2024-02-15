@@ -30,11 +30,23 @@ const Header = () => {
     navigate('/enrollment-form');
   };
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+  
+  const scrollToAbout = () => {
+    scrollToSection('about');
+  };
+  
+  const scrollToTeam = () => {
+    scrollToSection('team');
+  };
+  
+  const scrollToContact = () => {
+    scrollToSection('contact');
   };  
 
   return (
@@ -43,8 +55,8 @@ const Header = () => {
         <ul className={styles.navList}>
           {/* Call scrollToAbout function onClick */}
           <li><a href="#about" onClick={scrollToAbout}>About Us</a></li> 
-          <li><a href="#team" onClick={scrollToAbout}>Team</a></li>
-          <li><a href="#contact" onClick={scrollToAbout}>Contact</a></li>
+          <li><a href="#team" onClick={scrollToTeam}>Team</a></li>
+          <li><a href="#contact" onClick={scrollToContact}>Contact</a></li>
         </ul>
       </div>
       <div className={styles.middle}>
