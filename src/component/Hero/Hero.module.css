@@ -101,12 +101,12 @@
     }
   }
   
-  @media screen and (max-width: 700px) and (max-device-width: 420px) {
+  @media screen and (max-width: 700px) and (max-device-width: 430px) {
     .hero::before {
       height: 60%;
     }
   }
-  @media screen and (max-width: 700px) and (max-device-width: 385px) {
+  @media screen and (max-width: 700px) and (max-device-width: 365px) {
     .hero::before {
       height: 80%;
     }
