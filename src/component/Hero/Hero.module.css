@@ -100,14 +100,14 @@
       margin: 10px;
     }
   }
-  @media screen and (max-width: 700px) and (max-device-width: 385px) {
-    .hero::before {
-      height: 80%;
-    }
-  }
   
   @media screen and (max-width: 700px) and (max-device-width: 420px) {
     .hero::before {
       height: 60%;
+    }
+  }
+  @media screen and (max-width: 700px) and (max-device-width: 385px) {
+    .hero::before {
+      height: 80%;
     }
   }
