@@ -4,7 +4,7 @@ import styles from './Team.module.css';
 
 export default function Team() {
   return (
-    <div className={styles.teamContainer}>
+    <div className={styles.teamContainer} id="team">
       <h2>Our team</h2>
       <div className={styles.teamMembers}>
         

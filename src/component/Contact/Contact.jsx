@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <div className={styles.contactContainer}>
+    <div className={styles.contactContainer} id="contact">
       <div className={styles.mapContainer}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193310.88197913602!2d-75.22489910192707!3d39.95258397908658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c62b5ae0b1d5%3A0x9a4f7b5d3bfa6b8!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1644550808923!5m2!1sen!2sus"

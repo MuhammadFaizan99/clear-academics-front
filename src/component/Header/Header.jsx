@@ -35,7 +35,7 @@ const Header = () => {
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  };  
 
   return (
     <header className={styles.header}>
@@ -43,8 +43,8 @@ const Header = () => {
         <ul className={styles.navList}>
           {/* Call scrollToAbout function onClick */}
           <li><a href="#about" onClick={scrollToAbout}>About Us</a></li> 
-          <li><Link to="/">Team</Link></li>
-          <li><Link to="/">Contact</Link></li>
+          <li><a href="#team" onClick={scrollToAbout}>Team</a></li>
+          <li><a href="#contact" onClick={scrollToAbout}>Contact</a></li>
         </ul>
       </div>
       <div className={styles.middle}>
