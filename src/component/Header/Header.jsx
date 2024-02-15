@@ -37,9 +37,9 @@ const Header = () => {
     }
   };  
   const scrollToTeam = () => {
-    const aboutSection = document.getElementById('team');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    const teamSection = document.getElementById('team');
+    if (teamSection) {
+      teamSection.scrollIntoView({ behavior: 'smooth' });
     }
   }; 
   const scrollToContact = () => {
