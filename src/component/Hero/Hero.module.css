@@ -80,9 +80,6 @@
   
   /* Media query for widths less than 700px */
   @media (max-width: 700px) {
-    .hero {
-      width: 80%;
-    }
     .hero::before{
       max-height: 60%;
     }
@@ -103,4 +100,14 @@
       margin: 10px;
     }
   }
+  @media screen and (max-width: 700px) and (max-device-width: 480px) {
+    .hero {
+      width: 80%;
+    }
+  }
   
+  @media screen and (max-width: 700px) and (max-device-width: 414px) {
+    .hero {
+      width: 60%;
+    }
+  }
