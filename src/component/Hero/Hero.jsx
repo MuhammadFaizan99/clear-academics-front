@@ -5,6 +5,12 @@ import HeroStyles from './Hero.module.css';
 
 export default function Hero() {
   const navigate = useNavigate();
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const handleEnrollClick = () => {
     navigate('/enrollment-form');
   };
@@ -16,7 +22,7 @@ export default function Hero() {
       </p>
       <div className={HeroStyles.buttons}>
         <button className={HeroStyles.button } onClick={handleEnrollClick}>Enroll Now</button>
-        <button className={HeroStyles.button}>Contact us</button>
+        <button className={HeroStyles.button} onClick={scrollToContact}>Contact us</button>
       </div>
     </div>
   );
