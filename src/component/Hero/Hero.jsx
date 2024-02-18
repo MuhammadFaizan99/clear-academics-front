@@ -16,6 +16,8 @@ export default function Hero() {
   };
   return (
     <div className={HeroStyles.hero}>
+      <div className={HeroStyles.overlay}>
+      <div className={HeroStyles.mainHero}>
       <h1 className={HeroStyles.heading}>Empower Your Academic Vision</h1>
       <p className={HeroStyles.description}>
         "We aim to bridge the educational gap for low-income students, empowering them to achieve their maximum potential"
@@ -24,6 +26,8 @@ export default function Hero() {
         <button className={HeroStyles.button } onClick={handleEnrollClick}>Enroll Now</button>
         <button className={HeroStyles.button} onClick={scrollToContact}>Contact us</button>
       </div>
+      </div>
+    </div>
     </div>
   );
 }
