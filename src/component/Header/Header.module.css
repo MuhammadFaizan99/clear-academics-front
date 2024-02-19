@@ -57,14 +57,13 @@
 }
 
 .bar {
-    width: 35px; /* Width of hamburger menu bar */
-    height: 5px; /* Height of hamburger menu bar */
+    width: 35px; 
+    height: 5px; 
     background-color: #333;
-    margin: 6px 0; /* Spacing between hamburger menu bars */
-    transition: 0.4s; /* Smooth transition for animation */
+    margin: 6px 0; 
+    transition: 0.4s; 
 }
 
-/* Transform bars into 'X' when menu is open */
 .change.bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -88,52 +87,51 @@
     }
 
     .navList {
-        display: none; /* Hide the desktop nav list */
-        flex-direction: column; /* Stack items vertically */
-        width: 100%; /* Full width for mobile nav items */
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
     }
 
     .navList li {
-        text-align: left; /* Align text to the left */
+        text-align: left; 
     }
 
     .enrollButton {
-        width: 100%; /* Full width button for mobile */
-        margin-top: 20px; /* Space above the button */
+        width: 100%; 
+        margin-top: 20px; 
     }
 
     .hamburgerMenu {
-        display: block; /* Show hamburger menu */
+        display: block;
         position: absolute;
-        top: 20px; /* Position from the top of the header */
-        right: 20px; /* Position from the right of the header */
+        top: 20px;
+        right: 20px; 
     }
 
     .mobileMenu {
-        display: flex; /* Show mobile menu */
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-        width: 100%; /* Full width for mobile menu */
-        background-color: #f8f9fa;
+        display: flex; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        width: 100%; 
         padding-top: 15px;
         padding-bottom: 15px;
-        z-index: 1500; /* Ensure it's on top of other elements */
+        z-index: 1500; 
     }
 
     .mobileNavList {
         list-style-type: none;
         padding: 0;
-        margin: 0; /* Reset default margin */
-        width: 100%; /* Full width for mobile nav list */
+        margin: 0; 
+        width: 100%; 
     }
 
     .mobileNavList li {
-        padding: 10px 20px; /* Padding for touch targets */
-        width: 100%; /* Full width list items */
-        border-bottom: 1px solid #ddd; /* Separator between items */
+        padding: 10px 20px; 
+        width: 100%; 
+        border-bottom: 1px solid #ddd; 
     }
 
     .mobileNavList li:last-child {
-        border-bottom: none; /* No border for the last item */
+        border-bottom: none; 
     }
 }
