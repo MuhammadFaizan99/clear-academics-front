@@ -148,6 +148,9 @@
     .form {
         flex: 0 1 100%;
     }
+    .container {
+        box-shadow: none;
+    }
 }
 .error{
     color: red;
