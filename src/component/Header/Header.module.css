@@ -11,33 +11,23 @@
     border-bottom: 3px solid #D33622;
 }
 
-.left {
-    display: flex;
+.logoContainer {
+    cursor: pointer;
 }
 
-.middle {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.middle img {
-    width: 300px;
-    height: 72px;
-    margin-right: 87px;
-}
-
-.right {
-    display: flex;
+.logo {
+    width: 250px;
 }
 
 .navList {
     list-style-type: none;
     display: flex;
+    margin: 0; 
+    padding: 0; 
 }
 
 .navList li {
-    margin-right: 20px;
-    overflow: hidden;
+    padding: 0 10px;
 }
 
 .navList li a {
@@ -48,29 +38,6 @@
     position: relative;
 }
 
-.navList li a:hover {
-    text-decoration: none;
-}
-
-.navList li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -3px;
-    left: 0;
-    background-color: transparent;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-}
-
-.navList li a:hover::after {
-    visibility: visible;
-    background-color: #333;
-    transform: scaleX(1);
-}
-
 .enrollButton {
     background-color: #007bff;
     font-family: 'Arial', sans-serif;
@@ -79,80 +46,94 @@
     padding: 10px 25px;
     border-radius: 25px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .hamburgerMenu {
-    display: none;
+    display: none; 
     cursor: pointer;
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
+    width: 35px; /* Width of hamburger menu bar */
+    height: 5px; /* Height of hamburger menu bar */
     background-color: #333;
-    margin: 5px 0;
-    transition: transform 0.4s;
+    margin: 6px 0; /* Spacing between hamburger menu bars */
+    transition: 0.4s; /* Smooth transition for animation */
 }
 
-.change:nth-child(1) {
-    transform: rotate(45deg) translate(-2px, 7px);
+/* Transform bars into 'X' when menu is open */
+.change.bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-.change:nth-child(2) {
+.change.bar:nth-child(2) {
     opacity: 0;
 }
 
-.change:nth-child(3) {
-    transform: rotate(-45deg) translate(-2px, -7px);
+.change.bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
+/* Mobile view */
 @media (max-width: 700px) {
-
-    .left,
-    .right {
-        display: none;
+    .header {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .logo {
+        width: 219px;
     }
 
-    .middle img {
-        width: 180px;
-        height: 50px;
+    .navList {
+        display: none; /* Hide the desktop nav list */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width for mobile nav items */
+    }
+
+    .navList li {
+        text-align: left; /* Align text to the left */
+    }
+
+    .enrollButton {
+        width: 100%; /* Full width button for mobile */
+        margin-top: 20px; /* Space above the button */
     }
 
     .hamburgerMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        z-index: 1000;
+        display: block; /* Show hamburger menu */
+        position: absolute;
+        top: 20px; /* Position from the top of the header */
+        right: 20px; /* Position from the right of the header */
     }
 
     .mobileMenu {
+        display: flex; /* Show mobile menu */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        width: 100%; /* Full width for mobile menu */
         background-color: #f8f9fa;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        color: #333;
-        z-index: 999; 
-    }
-    
-
-    .mobileLogo {
-        width: 100px;
-        height: auto;
-        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        z-index: 1500; /* Ensure it's on top of other elements */
     }
 
     .mobileNavList {
         list-style-type: none;
         padding: 0;
-        margin-bottom: 20px;
+        margin: 0; /* Reset default margin */
+        width: 100%; /* Full width for mobile nav list */
     }
 
     .mobileNavList li {
-        margin-bottom: 10px;
+        padding: 10px 20px; /* Padding for touch targets */
+        width: 100%; /* Full width list items */
+        border-bottom: 1px solid #ddd; /* Separator between items */
+    }
+
+    .mobileNavList li:last-child {
+        border-bottom: none; /* No border for the last item */
     }
 }
