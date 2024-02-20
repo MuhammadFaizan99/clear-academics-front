@@ -8,7 +8,7 @@
     background-color: white;
     opacity: 0.85;
     color: #333;
-    border-bottom: 3px solid #D33622;
+    border-bottom: 3px solid rgba(211, 54, 34, 0.7);
 }
 
 .logoContainer {
@@ -34,6 +34,7 @@
     font-family: 'Arial', sans-serif;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
     color: #333;
     position: relative;
 }
