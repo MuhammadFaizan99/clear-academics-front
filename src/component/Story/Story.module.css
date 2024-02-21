@@ -1,12 +1,13 @@
 .storyContainer {
     margin-top: 60px;
-    padding: 10px;
+    padding: 10px 320px;
     text-align: center;
-    font-family: 'Mulish', 'Helvetica', 'Arial', 'Sans-Serif', serif;
+    font-family: "Fredoka", sans-serif;
 }
 
 .header {
     margin-bottom: 16px;
+    font-family: 'Mulish', 'Helvetica', 'Arial', 'Sans-Serif', serif;
     color: #454759;
     font-weight: 700;
     font-size: 3em; /* This will be large on mobile, so we'll adjust it in the media query */
@@ -17,10 +18,11 @@
 .content {
     margin-bottom: 16px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 19px;
+    letter-spacing: 4;
     line-height: 1.4;
     text-transform: none;
-    color: rgba(43, 45, 66, 1);
+    color: #454759;
 }
 
 .quote {

@@ -19,9 +19,7 @@ export default function Contact() {
       <div className={styles.contactInfo}>
         <h2>Contact us</h2>
         <p>
-          Got questions or ready to start a project? We're all ears! Reach out
-          to us today to discuss your ideas, schedule a consultation, or simply
-          say hello. We can't wait to hear from you!
+        Have questions or want to sign up? Head over to the enroll page where you can submit a form and we will get back to you shortly. Below we have our contact information where you can ask any questions or concerns you may have. We also offer consultation on your child's performance and solutions to getting them academically equipped for their classes. We appreciate all our clients and we can't wait to hear from you!
         </p>
         <div className={styles.mainContactDetails}>
           <div className={styles.contactDetails}>

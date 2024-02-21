@@ -10,11 +10,10 @@ export default function Team() {
         
         <div className={styles.teamMember}>
           <img src="../../assets/Samantha Doe.jpg" alt="Samantha Doe" className={styles.memberImage} />
-          <h3>Samantha Doe</h3>
-          <p className={styles.memberTitle}>LEAD STRATEGIST</p>
+          <h3>Yassine M.</h3>
+          <p className={styles.memberTitle}>Lead Developer</p>
           <p className={styles.memberDescription}>
-            A flair for crafting compelling campaigns that resonate with target audiences, driving
-            brand visibility & engagement.
+          Yassine represents one of the key tech leads in our tutoring platform at Drexel University. He has outstanding development skills and a strong passion for new technologies. He really upgrades our educational offers.
           </p>
           <div className={styles.socialMedia}>
             <FaFacebookF />
@@ -25,11 +24,10 @@ export default function Team() {
         
         <div className={styles.teamMember}>
           <img src="../../assets/Olivia Rodriguez.jpg" alt="Olivia Rodriguez" className={styles.memberImage} />
-          <h3>Olivia Rodriguez</h3>
-          <p className={styles.memberTitle}>FINANCIAL ANALYST</p>
+          <h3>Ibrahim B.</h3>
+          <p className={styles.memberTitle}>Marketing Strategist</p>
           <p className={styles.memberDescription}>
-            Detail-oriented financial expert adept at analyzing data, providing strategic insights
-            to optimize fiscal decision-making.
+          Ibrahim is studying for a Civil Engineering degree at Drexel University, and he is in charge of leading our marketing efforts with a strategic approach effectively expanding our reach and impact. 
           </p>
           <div className={styles.socialMedia}>
             <FaFacebookF />
@@ -40,11 +38,10 @@ export default function Team() {
 
         <div className={styles.teamMember}>
           <img src="../../assets/Marcus Douglas.jpg" alt="Marcus Douglas" className={styles.memberImage} />
-          <h3>Marcus Douglas</h3>
-          <p className={styles.memberTitle}>SOFTWARE ENGINEER</p>
+          <h3>William L.</h3>
+          <p className={styles.memberTitle}>Fundraising Coordinator</p>
           <p className={styles.memberDescription}>
-            Tech enthusiast, specializing in developing robust & scalable software solutions that
-            elevate user experiences.
+          William is a Drexel University Finance major who is in charge of leading our financial strategy, with a focus on raising funds for our growth and also providing community engagement in advancing the organization and society.
           </p>
           <div className={styles.socialMedia}>
             <FaFacebookF />
