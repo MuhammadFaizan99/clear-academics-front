@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -24,11 +24,14 @@ const Header = () => {
     navigate('/enrollment-form');
   };
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleSectionClick = (sectionId) => {
+    navigate('/');
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Adjust delay as needed to ensure smooth scrolling
   };
 
   return (
@@ -39,9 +42,9 @@ const Header = () => {
       {!isMobile && (
         <>
           <ul className={styles.navList}>
-            <li><a href="#about" onClick={() => scrollToSection('about')}>About Us</a></li> 
-            <li><a href="#team" onClick={() => scrollToSection('team')}>Team</a></li>
-            <li><a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a></li>
+            <li><Link to="/#about" onClick={() => handleSectionClick('about')}>About Us</Link></li> 
+            <li><Link to="/#team" onClick={() => handleSectionClick('team')}>Team</Link></li>
+            <li><Link to="/#contact" onClick={() => handleSectionClick('contact')}>Contact</Link></li>
           </ul>
           <button className={styles.enrollButton} onClick={handleEnrollClick}>Enroll Now</button>
         </>
@@ -56,9 +59,9 @@ const Header = () => {
       {isMobile && showMenu && (
         <div className={styles.mobileMenu}>
           <ul className={styles.mobileNavList}>
-            <li onClick={() => scrollToSection('about')}>About Us</li>
-            <li onClick={() => scrollToSection('team')}>Team</li>
-            <li onClick={() => scrollToSection('contact')}>Contact</li>
+            <li onClick={() => {handleSectionClick('about'); setShowMenu(false);}}>About Us</li>
+            <li onClick={() => {handleSectionClick('team'); setShowMenu(false);}}>Team</li>
+            <li onClick={() => {handleSectionClick('contact'); setShowMenu(false);}}>Contact</li>
             <li><button className={styles.enrollButton} onClick={handleEnrollClick}>Enroll Now</button></li>
           </ul>
         </div>

@@ -1,0 +1,57 @@
+.storyContainer {
+    margin-top: 60px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Mulish', 'Helvetica', 'Arial', 'Sans-Serif', serif;
+}
+
+.header {
+    margin-bottom: 16px;
+    color: #454759;
+    font-weight: 700;
+    font-size: 3em; /* This will be large on mobile, so we'll adjust it in the media query */
+    line-height: 1.143;
+    text-transform: none;
+}
+
+.content {
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: none;
+    color: rgba(43, 45, 66, 1);
+}
+
+.quote {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.footer {
+    font-size: 16px;
+    color: #666;
+    font-weight: 300;
+    line-height: 1.4;
+    text-transform: none;
+    color: rgba(43, 45, 66, 1);
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+    .storyContainer {
+        margin-top: 0px; 
+        padding: 10px; 
+    }
+
+    .header {
+        font-size: 2em; 
+        line-height: 1.2;
+    }
+
+    .content, .quote, .footer {
+        font-size: 14px; 
+    }
+}
