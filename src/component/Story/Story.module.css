@@ -1,7 +1,6 @@
 .storyContainer {
     margin-top: 60px;
     padding: 10px 320px;
-    text-align: center;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -10,7 +9,8 @@
     font-family: 'Mulish', 'Helvetica', 'Arial', 'Sans-Serif', serif;
     color: #454759;
     font-weight: 700;
-    font-size: 3em; /* This will be large on mobile, so we'll adjust it in the media query */
+    font-size: 3em; 
+    text-align: center;
     line-height: 1.143;
     text-transform: none;
 }

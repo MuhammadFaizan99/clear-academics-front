@@ -24,16 +24,16 @@ export default function Contact() {
         <div className={styles.mainContactDetails}>
           <div className={styles.contactDetails}>
             <IoMdCall className={styles.icon} />
-            <span className={styles.description}>425-334-5956</span>
+            <span className={styles.description}>484-326-7070</span>
           </div>
           <div className={styles.contactDetails}>
             <IoMdMail className={styles.icon} />
-            <span className={styles.description}>youremail@address.com</span>
+            <span className={styles.description}>Yassinemijane@gmail.com</span>
           </div>
           <div className={styles.contactDetails}>
             <IoMdPin className={styles.icon} />
             <span className={styles.description}>
-              4923 Ryder Avenue, Iceland
+            Philadelphia, PA
             </span>
           </div>
         </div>
