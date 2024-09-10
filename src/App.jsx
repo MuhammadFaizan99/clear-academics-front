@@ -3,6 +3,7 @@ import './App.css'
 import Home from './component/Home/Home'
 import Primary from './component/Primary'
 import EnrollmentForm from './component/EnrollmentForm/EnrollmentForm'
+import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Home />}>
         <Route path='/' element={<Primary />} /> 
         <Route path='/enrollment-form' element={<EnrollmentForm />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </>

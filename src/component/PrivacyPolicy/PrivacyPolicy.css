@@ -1,0 +1,53 @@
+.Privacy-Policy {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2d42;
+    color: #fff;
+}
+
+.Privacy-Policy header {
+    background-color: #2f7cff;
+    padding: 20px;
+    text-align: center;
+}
+
+.Privacy-Policy h1 {
+    margin: 0;
+}
+
+.Privacy-Policy section {
+    padding: 20px;
+}
+
+.Privacy-Policy h2 {
+    color: #2f7cff;
+}
+
+.Privacy-Policy h3 {
+    color: #2f7cff;
+}
+
+.Privacy-Policy ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Privacy-Policy li {
+    margin-bottom: 10px;
+}
+
+.Privacy-Policy a {
+    color: #2f7cff;
+    text-decoration: none;
+}
+
+.Privacy-Policy a:hover {
+    text-decoration: underline;
+}
+
+.Privacy-Policy footer {
+    background-color: #2f7cff;
+    padding: 20px;
+    text-align: center;
+}
